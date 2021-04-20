@@ -1,0 +1,103 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script src="https://kit.fontawesome.com/29ee0bc57e.js" crossorigin="anonymous">
+  </script>
+
+  <meta charset="utf-8">
+  <title>TooDooList</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+  <!-- Add your site or application content here -->
+
+  <h1>TooDoo</h1>
+  <button type="submit" class="deleteAll" id="submit">Удалить все задачи</button>
+
+  <!-- Комментарий -->
+  <section class="container">
+    <div class="impTasks">
+      <h2>
+        Срочные задачи
+      </h2>
+      <div class="line1"></div>
+      <div class="imptext">
+        <h4>
+          Чтобы сделать задачу срочной, выберите нужную задачу и нажмите на кнопку ☆
+        </h4>
+      </div>
+      <div class="ImpReallyTasks">
+        <ul id="impUL">
+
+        </ul>
+      </div>
+    </div>
+    <div class="tasks">
+      <h2>
+        Ваш список задач
+      </h2>
+      <div class="line2"></div>
+      <div class="reallyTasks">
+        <ul id="myUL">
+
+        </ul>
+      </div>
+      <div class="newTask">
+        <input type="text" id="myInput" placeholder="Добавить новую задачу" />
+        <span class="addBtn" id="add_button"><img src="img/plus.png"> </span>
+      </div>
+      <script src="with_class.js"></script>
+    </div>
+  </section>
+  <div class="footer">
+    <div class="line"></div>
+    <div class="copyright">
+      <h5>
+        TooDoo © by KKdevelopment
+      </h5>
+    </div>
+  </div>
+
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  <div class="modal-container" id="myModal">
+    <div class="modal-content">
+      <input type="text" id="editInput" placeholder="Введите новое название задачи"/>
+      <span class="close">&times;</span>
+      <span class="edit">&plus;</span>
+
+    </div>
+  </div>
+
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script>
+  <script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
